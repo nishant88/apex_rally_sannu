@@ -8,7 +8,7 @@ const Home = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background z-10"></div>
                     <img 
                         className="w-full h-full object-cover object-center" 
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv1ZED8Y8MDhWloM2CLwch_cQ7pof5saISsYE4qGfQAeCFHKmgFiNHM9JSP_yk4BUUuwicTlBqSxO5vKpBgllyrzOk1fL7OhWeH4ZYKvucTxVHios63zlez7PSFyDiW27zVnpbAsMtK2kFG9yYQohikjiYjx7vA6dFEnnNBSd5MPFCxjj8nlUyvUFdGDTTKceQ-8_QXz1-tiUXcChTOCeAmE0V0y9hGRaDCiCM9e70iYJnT9eeC5se" 
+                        src="/hero_rally_car.jpg" 
                         alt="Cinematic rally car drifting"
                     />
                 </div>
