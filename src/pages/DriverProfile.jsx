@@ -28,7 +28,7 @@ const DriverProfile = () => {
                     <img 
                         alt="Driver Portrait" 
                         className="w-full h-full object-cover grayscale opacity-80" 
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUdycbXrp-TgfaiGddQRAxAWM2Yo0SdUSTrpt_DyN4rPAasB7wnbunflRcl2kNJdkQ2fphE9pfeAr-XcOQj_mnp6rhAv9Uher8liwTBLcrV4iNX5jE1DHaKPE9x22dxlGOUK2Yhb6hI1U0pcJgITNV6jReI3DGKQdsSWd1lBJ9kO_zpeCtNwCeiLrBxSPWVCQJ4t3jYSO7CjmV7Qc1I4n8-tsX91SYP6BD5Vn9n3LbSJ36q9c1kQLq"
+                        src="/driver_portrait.jpg" 
                     />
                     <div className="absolute bottom-4 right-4 bg-background/80 backdrop-blur-md px-4 py-2 border border-outline-variant">
                         <span className="font-data-label text-data-label text-on-surface uppercase">Drv-001 // System Online</span>
