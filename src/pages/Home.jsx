@@ -51,7 +51,7 @@ const Home = () => {
                         <div className="bg-surface-container-lowest/80 backdrop-blur-md p-6 border border-[#252525] relative">
                             <span className="data-card-index">TELEMETRY_01</span>
                             <p className="font-data-label text-data-label text-outline mb-1 uppercase">Age</p>
-                            <p className="font-headline-md text-headline-md text-on-surface">22</p>
+                            <p className="font-headline-md text-headline-md text-on-surface">38</p>
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="bg-surface-container-lowest/80 backdrop-blur-md p-6 border border-[#252525] relative">
