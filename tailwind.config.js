@@ -78,6 +78,14 @@ export default {
         "display-lg-mobile": ["Space Grotesk", "sans-serif"],
         "headline-md": ["Space Grotesk", "sans-serif"],
         "data-label": ["JetBrains Mono", "monospace"]
+      },
+      fontSize: {
+        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+        "display-lg-mobile": ["40px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
+        "display-lg": ["72px", { lineHeight: "1.1", letterSpacing: "-0.04em", fontWeight: "700" }],
+        "data-label": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "500" }],
+        "headline-md": ["32px", { lineHeight: "1.3", letterSpacing: "-0.01em", fontWeight: "600" }]
       }
     },
   },
