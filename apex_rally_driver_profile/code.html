@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Driver Profile | APEX RALLY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#ffb4a8",
+                      "background": "#121414",
+                      "on-primary": "#690000",
+                      "on-primary-fixed-variant": "#930100",
+                      "surface-container-lowest": "#0c0f0f",
+                      "inverse-primary": "#c00000",
+                      "surface-bright": "#37393a",
+                      "primary-fixed": "#ffdad4",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "primary-fixed-dim": "#ffb4a8",
+                      "outline": "#b08781",
+                      "surface": "#121414",
+                      "error": "#ffb4ab",
+                      "surface-container-low": "#1a1c1c",
+                      "tertiary-fixed": "#e4e2e1",
+                      "on-error": "#690005",
+                      "on-background": "#e2e2e2",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "surface-container-highest": "#333535",
+                      "inverse-surface": "#e2e2e2",
+                      "surface-variant": "#333535",
+                      "error-container": "#93000a",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "secondary-container": "#474746",
+                      "surface-container-high": "#282a2b",
+                      "on-tertiary-container": "#fbf8f8",
+                      "secondary-fixed": "#e5e2e1",
+                      "surface-dim": "#121414",
+                      "on-secondary": "#313030",
+                      "surface-tint": "#ffb4a8",
+                      "on-secondary-fixed-variant": "#474746",
+                      "outline-variant": "#5f3f3a",
+                      "on-surface-variant": "#e9bcb5",
+                      "secondary": "#c8c6c5",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "on-primary-container": "#fff7f5",
+                      "inverse-on-surface": "#2f3131",
+                      "tertiary": "#c8c6c5",
+                      "on-tertiary": "#303030",
+                      "surface-container": "#1e2020",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary-container": "#b7b5b4",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-surface": "#e2e2e2",
+                      "tertiary-container": "#737272",
+                      "primary-container": "#e60000",
+                      "on-primary-fixed": "#410000"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "section-gap": "120px",
+                      "margin-desktop": "80px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "display-lg-mobile": ["Space Grotesk"],
+                      "body-md": ["Inter"],
+                      "display-lg": ["Space Grotesk"],
+                      "data-label": ["JetBrains Mono"],
+                      "headline-md": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                      "data-label": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .tech-border {
+            border: 1px solid #252525;
+        }
+        .tech-border-top-red {
+            border-top: 2px solid #e60000;
+        }
+        .bar-bg {
+            background-color: #1A1A1A;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant flat no shadows hidden md:block">
+<div class="flex justify-between items-center px-margin-desktop py-4 w-full">
+<div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">APEX RALLY</div>
+<div class="flex items-center space-x-gutter">
+<a class="font-data-label text-data-label uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:text-primary transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Home</a>
+<a class="font-data-label text-data-label uppercase tracking-widest text-primary border-b-2 border-primary pb-1 hover:text-primary transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Driver</a>
+<a class="font-data-label text-data-label uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:text-primary transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Results</a>
+<a class="font-data-label text-data-label uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:text-primary transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Rally Journey</a>
+<a class="font-data-label text-data-label uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:text-primary transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Media</a>
+<a class="font-data-label text-data-label uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:text-primary transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Sponsorship</a>
+</div>
+<button class="bg-primary-container text-white font-data-label text-data-label uppercase tracking-widest px-6 py-3 rounded-none hover:bg-inverse-primary transition-colors">BECOME A PARTNER</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-[120px] pb-section-gap px-margin-mobile md:px-margin-desktop max-w-[1920px] mx-auto w-full">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
+<div class="md:col-span-5 flex flex-col justify-center border-l border-outline-variant pl-gutter relative h-full min-h-[400px]">
+<div class="absolute top-0 left-0 w-2 h-[2px] bg-primary-container"></div>
+<div class="font-data-label text-data-label text-on-surface-variant mb-4 uppercase tracking-widest">Driver Profile</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface uppercase mb-6">THE STAGE<br/>IS MY<br/>OFFICE</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md border-b border-outline-variant pb-6 mb-6">
+                    A powerful journey rooted in the precision of karting, evolving onto the unpredictable gravel stages. The ambition remains unwavering: a national title.
+                </p>
+<div class="font-data-label text-data-label text-on-surface flex items-center gap-4">
+<span class="bg-surface-container px-3 py-1 border border-outline-variant">STATUS: ACTIVE</span>
+<span class="bg-surface-container px-3 py-1 border border-outline-variant">CLASS: RALLY2</span>
+</div>
+</div>
+<div class="md:col-span-7 h-[600px] relative tech-border">
+<img alt="Driver Portrait" class="w-full h-full object-cover grayscale opacity-80" data-alt="High contrast, moody monochrome photograph of a rally driver in a race suit, looking focused. Industrial lighting, dark background, technical aesthetic, high-end editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUdycbXrp-TgfaiGddQRAxAWM2Yo0SdUSTrpt_DyN4rPAasB7wnbunflRcl2kNJdkQ2fphE9pfeAr-XcOQj_mnp6rhAv9Uher8liwTBLcrV4iNX5jE1DHaKPE9x22dxlGOUK2Yhb6hI1U0pcJgITNV6jReI3DGKQdsSWd1lBJ9kO_zpeCtNwCeiLrBxSPWVCQJ4t3jYSO7CjmV7Qc1I4n8-tsX91SYP6BD5Vn9n3LbSJ36q9c1kQLq"/>
+<div class="absolute bottom-4 right-4 bg-background/80 backdrop-blur-md px-4 py-2 border border-outline-variant">
+<span class="font-data-label text-data-label text-on-surface">DRV-001 // SYSTEM ONLINE</span>
+</div>
+</div>
+</section>
+<!-- Philosophy & Attributes Bento -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
+<!-- Quote Block -->
+<div class="md:col-span-6 bg-surface-container-low tech-border p-8 relative flex flex-col justify-between">
+<div class="absolute top-0 right-0 p-4 font-data-label text-data-label text-on-surface-variant">001</div>
+<div>
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6 opacity-50" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-headline-md text-headline-md text-on-surface mb-8 border-l-2 border-primary-container pl-6 py-2">
+                        "Every stage is a test of preparation, precision and courage. The goal isn't simply to finish faster. It's to continuously become a better driver."
+                    </blockquote>
+</div>
+<div class="font-data-label text-data-label text-on-surface-variant tracking-widest uppercase">
+                    // Driver Philosophy
+                </div>
+</div>
+<!-- Technical Attributes -->
+<div class="md:col-span-6 bg-surface-container-lowest tech-border tech-border-top-red p-8 relative">
+<div class="absolute top-0 right-0 p-4 font-data-label text-data-label text-on-surface-variant">002</div>
+<h3 class="font-data-label text-data-label text-on-surface tracking-widest uppercase mb-10 border-b border-outline-variant pb-4">Performance Telemetry</h3>
+<div class="space-y-8">
+<!-- Racecraft -->
+<div>
+<div class="flex justify-between font-data-label text-data-label text-on-surface mb-2">
+<span>RACECRAFT</span>
+<span>90%</span>
+</div>
+<div class="h-2 w-full bar-bg">
+<div class="h-full bg-primary-container w-[90%]"></div>
+</div>
+</div>
+<!-- Pace -->
+<div>
+<div class="flex justify-between font-data-label text-data-label text-on-surface mb-2">
+<span>PACE</span>
+<span>85%</span>
+</div>
+<div class="h-2 w-full bar-bg">
+<div class="h-full bg-primary-container w-[85%]"></div>
+</div>
+</div>
+<!-- Technical Understanding -->
+<div>
+<div class="flex justify-between font-data-label text-data-label text-on-surface mb-2">
+<span>TECHNICAL UNDERSTANDING</span>
+<span>95%</span>
+</div>
+<div class="h-2 w-full bar-bg">
+<div class="h-full bg-primary-container w-[95%]"></div>
+</div>
+</div>
+<!-- Mental Strength -->
+<div>
+<div class="flex justify-between font-data-label text-data-label text-on-surface mb-2">
+<span>MENTAL STRENGTH</span>
+<span>88%</span>
+</div>
+<div class="h-2 w-full bar-bg">
+<div class="h-full bg-primary-container w-[88%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Identity Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
+<div class="md:col-span-12 font-data-label text-data-label text-on-surface-variant tracking-widest uppercase border-b border-outline-variant pb-4 mb-8">
+                Visual Identity Subsystem
+            </div>
+<div class="md:col-span-4 h-[400px] tech-border bg-surface-container relative p-6 flex flex-col items-center justify-center">
+<div class="absolute top-0 left-0 p-4 font-data-label text-data-label text-on-surface-variant">HELMET DESIGN</div>
+<img alt="Helmet Design" class="w-full h-full object-contain p-8" data-alt="A modern, high-tech rally helmet sitting on a dark industrial surface. The helmet is matte black with sharp red geometric accents and a dark visor. Dramatic overhead lighting, technical aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6wdBCoDV-eKmJT8slCA0kfR-yI9Ln3Ofa7R3ng0T4jqf_3y74V1x9sqoq6gwm56uuUdher1e5xWPB3ieIheN8wBE5dQg9BYE-uts9-dD0sSCuAimdAsCq_vCMmjBHUM1AMTIkDE9hKiwn7UJm5HfbL5deNVesgleqdd92t3Shzrbm6tpJvf2lI4JEqKxKs3NzobJMRUphZl5LAfohf-76tkpcEqdwGVIqm--ppbdDtqMiX0HBsvVY"/>
+</div>
+<div class="md:col-span-4 h-[400px] tech-border bg-primary-container text-white relative flex items-center justify-center overflow-hidden">
+<div class="absolute top-0 left-0 p-4 font-data-label text-data-label text-white/50">RACE NUMBER</div>
+<div class="font-display-lg text-[180px] leading-none tracking-tighter opacity-90">#42</div>
+<div class="absolute bottom-4 right-4 font-data-label text-data-label text-white/50 border border-white/20 px-2 py-1">OFFICIAL REGISTRATION</div>
+</div>
+<div class="md:col-span-4 h-[400px] tech-border bg-surface-container-lowest relative flex items-center justify-center p-8">
+<div class="absolute top-0 left-0 p-4 font-data-label text-data-label text-on-surface-variant">SIGNATURE LOGO</div>
+<div class="w-full text-center font-display-lg text-display-lg text-on-surface tracking-widest border-y border-outline-variant py-8">
+                    APEX
+                 </div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full pt-section-gap pb-10 border-t border-outline-variant flat no shadows mt-auto">
+<div class="grid grid-cols-12 gap-gutter px-margin-desktop mx-auto max-w-7xl">
+<div class="col-span-12 md:col-span-4 mb-8 md:mb-0">
+<div class="font-headline-md text-headline-md text-primary mb-4">APEX RALLY</div>
+<div class="font-data-label text-data-label text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">
+                    © 2024 APEX RALLY RACING. ALL RIGHTS RESERVED.
+                </div>
+</div>
+<div class="col-span-12 md:col-span-8 flex flex-wrap gap-8 md:justify-end items-end">
+<a class="font-data-label text-data-label text-on-surface-variant hover:text-on-surface transition-colors" href="#">START THE CONVERSATION</a>
+<a class="font-data-label text-data-label text-on-surface-variant hover:text-on-surface transition-colors" href="#">INSTAGRAM</a>
+<a class="font-data-label text-data-label text-on-surface-variant hover:text-on-surface transition-colors" href="#">YOUTUBE</a>
+<a class="font-data-label text-data-label text-on-surface-variant hover:text-on-surface transition-colors" href="#">PRIVACY POLICY</a>
+<a class="font-data-label text-data-label text-on-surface-variant hover:text-on-surface transition-colors" href="#">TECHNICAL SPECS</a>
+</div>
+</div>
+</footer>
+</body></html>

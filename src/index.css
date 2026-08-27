@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-bg {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, #252525 1px, transparent 1px), linear-gradient(to bottom, #252525 1px, transparent 1px);
+}
+.text-racing-red { color: #e60000; }
+.bg-racing-red { background-color: #e60000; }
+.border-racing-red { border-color: #e60000; }
+.data-card-index {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #5f3f3a;
+    font-family: 'JetBrains Mono';
+    font-size: 10px;
+}
+.technical-border { border: 1px solid #252525; }
+.tech-border-top-red { border-top: 2px solid #e60000; }
+.bar-bg { background-color: #1A1A1A; }
+.glass-panel {
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.zone-highlight {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.zone-highlight:hover {
+    stroke: #e60000;
+    stroke-width: 2px;
+    fill: rgba(230, 0, 0, 0.2);
+}
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+.chart-grid-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-top: 1px dashed #333535;
+    z-index: 1;
+}
+.chart-point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #e60000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    box-shadow: 0 0 10px rgba(230, 0, 0, 0.5);
+}
+.chart-line {
+    position: absolute;
+    height: 2px;
+    background-color: #ffb4a8;
+    transform-origin: left center;
+    z-index: 2;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #121414;
+}
+::-webkit-scrollbar-thumb {
+    background: #333535;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #e60000;
+}
